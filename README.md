@@ -12,7 +12,7 @@
 
   > 计划采用纯前后分离
 
-- 前端技术选型：vue3+elementplus+vuex+scss+webpack+typescript+axios
+- 前端技术选型：vue3+elementplus+pinia+scss+webpack+typescript+axios
 
   > 计划做单页面响应式布局，虽然设备不同展示不同，但都是一个页面
 
