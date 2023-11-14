@@ -79,7 +79,7 @@ create table blog_user(
 
 ## 文章表
 
-article
+blog_article
 
 | 字段名       | 字段类型     | 约束             | 说明      | 备注                  |
 | ------------ | ------------ | ---------------- | --------- | --------------------- |
@@ -100,7 +100,7 @@ article
 ### sql语句
 
 ```sql
-create table article(
+create table blog_article(
     art_id int primary key not null auto_increment comment '文章id',
     art_title varchar(30) not null comment '文章title',
     art_subhead varchar(50) comment '副标题',
@@ -123,7 +123,7 @@ create table article(
 
 ## 分类表
 
-tag
+blog_tag
 
 | 字段名        | 字段类型     | 约束             | 说明     | 备注                  |
 | ------------- | ------------ | ---------------- | -------- | --------------------- |
@@ -138,7 +138,7 @@ tag
 ### sql语句
 
 ```sql
-create table tag(
+create table blog_tag(
     tag_id int primary key not null auto_increment comment '分类id',
     tag_name varchar(10) not null comment '分类名称',
     tag_parent_id int default 0 comment '父分类',
@@ -155,7 +155,7 @@ create table tag(
 
 ## 日记表
 
-diary
+blog_diary
 
 | 字段名       | 字段类型     | 约束             | 说明     | 备注                  |
 | ------------ | ------------ | ---------------- | -------- | --------------------- |
@@ -171,7 +171,7 @@ diary
 ### sql语句
 
 ```sql
-create table diary(
+create table blog_diary(
     dia_id int primary key not null auto_increment comment '日记id',
     dia_content varchar(400) not null comment '日记内容',
     dia_show int default 0 comment '查看次数',
@@ -189,7 +189,7 @@ create table diary(
 
 ## 友情链接表
 
-link
+blog_link
 
 | 字段名       | 字段类型     | 约束             | 说明        | 备注                  |
 | ------------ | ------------ | ---------------- | ----------- | --------------------- |
@@ -206,7 +206,7 @@ link
 ### sql语句
 
 ```sql
-create table link(
+create table blog_link(
     link_id int primary key not null auto_increment comment '友情链接主键',
     link_title varchar(20) comment '链接标题',
     link_subhead varchar(40) comment '副标题',
@@ -223,7 +223,7 @@ create table link(
 
 ## 留言板表
 
-message
+blog_message
 
 | 字段名        | 字段类型     | 约束             | 说明     | 备注                  |
 | ------------- | ------------ | ---------------- | -------- | --------------------- |
@@ -239,7 +239,7 @@ message
 ### sql语句
 
 ```sql
-create table message(
+create table blog_message(
     msg_id int primary key not null auto_increment comment '留言板id',
     msg_name varchar(20) comment '留言者',
     msg_content varchar(200) not null default '' comment '留言内容',
@@ -255,7 +255,7 @@ create table message(
 
 ## 关于我表
 
-me
+blog_me
 
 | 字段名      | 字段类型     | 约束             | 说明         | 备注                  |
 | ----------- | ------------ | ---------------- | ------------ | --------------------- |
@@ -269,7 +269,7 @@ me
 ### sql语句
 
 ```sql
-create table me(
+create table blog_me(
     me_id int primary key not null primary key comment '关于我id',
     me_content varchar(200) comment '关于我的内容',
     status boolean default true comment '状态',
@@ -283,9 +283,9 @@ create table me(
 
 # 系统表
 
-## ~~客户端请求表~~(取消改表)
+## ~~客户端请求表~~(取消该表)
 
-request
+~~blog_request~~
 
 | 字段名      | 字段类型     | 约束             | 说明     | 备注                  |
 | ----------- | ------------ | ---------------- | -------- | --------------------- |
@@ -305,7 +305,7 @@ request
 
 ## 日志表
 
-log
+blog_log
 
 | 字段名          | 字段类型     | 约束             | 说明         | 备注                      |
 | --------------- | ------------ | ---------------- | ------------ | ------------------------- |
@@ -322,7 +322,7 @@ log
 ### sql语句
 
 ```sql
-create table log(
+create table blog_log(
     log_id int primary key not null auto_increment comment '日志主键',
     log_title varchar(4) comment '日志title',
     log_type varchar(4) comment '操作类型',

@@ -2,11 +2,13 @@
 
 ## 简介
 
-林风博客为我的个人博客，所以为个人项目且独立完成，也算是一个找工作用的个人项目吧
-
-
+林风博客为我的个人博客，所以为个人项目且独立完成
 
 项目进度：[点我查看项目进度](./course.md)
+
+[后端项目源码](https://github.com/linfeng12138/linfeng-blog2-java-api)
+
+前端项目源码（暂未开始）
 
 
 
@@ -21,8 +23,14 @@
 - 前端技术选型：vue3+elementplus+pinia+scss+webpack+typescript+axios
 
   > 计划做单页面响应式布局，虽然设备不同展示不同，但都是一个页面
+  
+  
 
-
+> TIP:
+>
+> JDK version 17
+>
+> MySQL version 8.x
 
 ## 开发周期
 

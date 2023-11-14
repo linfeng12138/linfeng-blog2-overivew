@@ -1,6 +1,6 @@
 show databases;
-create database linfeng_blog2;
-use linfeng_blog2;
+create database linfeng_blog_two;
+use linfeng_blog_two;
 create table blog_user(
     user_id int primary key not null auto_increment comment '用户id',
     user_name varchar(20) not null comment '用户名',
@@ -14,7 +14,7 @@ create table blog_user(
     remark varchar(100) comment '备注，预留字段'
 ) comment '用户表';
 
-create table article(
+create table blog_article(
     art_id int primary key not null auto_increment comment '文章id',
     art_title varchar(30) not null comment '文章title',
     art_subhead varchar(50) comment '副标题',
@@ -30,7 +30,7 @@ create table article(
     remark varchar(100) comment '备注，预留字段'
 ) comment '文章表';
 
-create table tag(
+create table blog_tag(
     tag_id int primary key not null auto_increment comment '分类id',
     tag_name varchar(10) not null comment '分类名称',
     tag_parent_id int default 0 comment '父分类',
@@ -40,7 +40,7 @@ create table tag(
     remark varchar(100) comment '备注，预留字段'
 ) comment '分类表';
 
-create table diary(
+create table blog_diary(
     dia_id int primary key not null auto_increment comment '日记id',
     dia_content varchar(400) not null comment '日记内容',
     dia_show int default 0 comment '查看次数',
@@ -51,7 +51,7 @@ create table diary(
     remark varchar(100) comment '备注，预留字段'
 ) comment '日记表';
 
-create table link(
+create table blog_link(
     link_id int primary key not null auto_increment comment '友情链接主键',
     link_title varchar(20) comment '链接标题',
     link_subhead varchar(40) comment '副标题',
@@ -63,7 +63,7 @@ create table link(
     remark varchar(100) comment '备注，预留字段'
 ) comment '友情链接表';
 
-create table message(
+create table blog_message(
     msg_id int primary key not null auto_increment comment '留言板id',
     msg_name varchar(20) comment '留言者',
     msg_content varchar(200) not null default '' comment '留言内容',
@@ -74,7 +74,7 @@ create table message(
     remark varchar(100) comment '备注，预留字段'
 ) comment '留言板表';
 
-create table me(
+create table blog_me(
     me_id int primary key not null primary key comment '关于我id',
     me_content varchar(200) comment '关于我的内容',
     status boolean default true comment '状态',
@@ -83,7 +83,7 @@ create table me(
     remark varchar(100) comment '备注，预留字段'
 ) comment '关于我表';
 
-create table log(
+create table blog_log(
     log_id int primary key not null auto_increment comment '日志主键',
     log_title varchar(4) comment '日志title',
     log_type varchar(4) comment '操作类型',
