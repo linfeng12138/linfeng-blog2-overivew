@@ -8,9 +8,9 @@
 
 [后端项目源码](https://github.com/linfeng12138/linfeng-blog2-java-api)
 
-前端项目源码（暂未开始）
+[前端项目源码](https://github.com/linfeng12138/linfeng-blog2-web)
 
-
+前端后台源码（暂未开始）
 
 ## 技术选型
 
@@ -18,12 +18,14 @@
 
 - 后端技术选型：Maven+SpringBoot+mybatis+springMVC
 
-  > 计划采用纯前后分离
+  > 计划采用纯前后分离，后端计划只用一个项目不拆分（没办法，林风没钱弄那么多服务器啊┭┮﹏┭┮）
 
-- 前端技术选型：vue3+elementplus+pinia+scss+webpack+typescript+axios
+- 前端技术选型：vue3+pinia+scss+webpack+typescript+axios
 
   > 计划做单页面响应式布局，虽然设备不同展示不同，但都是一个页面
-  
+
+  前台与后台：所用技术仅ui不同，前端前台计划使用NaiveUI，而后端前台计划使用ElementPlus
+
   
 
 > TIP:

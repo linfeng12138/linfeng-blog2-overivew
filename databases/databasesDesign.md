@@ -33,7 +33,7 @@ blog_user
 
 ```sql
 create table blog_user(
-    user_id int primary key not null auto_increment comment '用户id',
+    user_id int primary key auto_increment comment '用户id',
     user_name varchar(20) not null comment '用户名',
     user_password varchar(100) not null comment '登录密码',
     user_email varchar(40) not null comment '邮箱',
@@ -101,7 +101,7 @@ blog_article
 
 ```sql
 create table blog_article(
-    art_id int primary key not null auto_increment comment '文章id',
+    art_id int primary key auto_increment comment '文章id',
     art_title varchar(30) not null comment '文章title',
     art_subhead varchar(50) comment '副标题',
     art_author varchar(20) comment '文章作者',
@@ -139,7 +139,7 @@ blog_tag
 
 ```sql
 create table blog_tag(
-    tag_id int primary key not null auto_increment comment '分类id',
+    tag_id int primary key auto_increment comment '分类id',
     tag_name varchar(10) not null comment '分类名称',
     tag_parent_id int default 0 comment '父分类',
     status boolean default true comment '状态',
@@ -172,7 +172,7 @@ blog_diary
 
 ```sql
 create table blog_diary(
-    dia_id int primary key not null auto_increment comment '日记id',
+    dia_id int primary key auto_increment comment '日记id',
     dia_content varchar(400) not null comment '日记内容',
     dia_show int default 0 comment '查看次数',
     dia_text_num int comment '日记字数',
@@ -207,7 +207,7 @@ blog_link
 
 ```sql
 create table blog_link(
-    link_id int primary key not null auto_increment comment '友情链接主键',
+    link_id int primary key auto_increment comment '友情链接主键',
     link_title varchar(20) comment '链接标题',
     link_subhead varchar(40) comment '副标题',
     link_img varchar(100) comment '链接图片url，插入时请设置默认值',
@@ -240,7 +240,7 @@ blog_message
 
 ```sql
 create table blog_message(
-    msg_id int primary key not null auto_increment comment '留言板id',
+    msg_id int primary key auto_increment comment '留言板id',
     msg_name varchar(20) comment '留言者',
     msg_content varchar(200) not null default '' comment '留言内容',
     msg_parent_id int default 0 comment '父留言板',
@@ -270,7 +270,7 @@ blog_me
 
 ```sql
 create table blog_me(
-    me_id int primary key not null primary key comment '关于我id',
+    me_id int primary key primary key comment '关于我id',
     me_content varchar(200) comment '关于我的内容',
     status boolean default true comment '状态',
     create_time datetime default now() comment '创建时间',
@@ -323,7 +323,7 @@ blog_log
 
 ```sql
 create table blog_log(
-    log_id int primary key not null auto_increment comment '日志主键',
+    log_id int primary key auto_increment comment '日志主键',
     log_title varchar(4) comment '日志title',
     log_type varchar(4) comment '操作类型',
     log_ajax varchar(7) comment '请求方式',
