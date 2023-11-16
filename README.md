@@ -14,7 +14,7 @@
 
 ## 技术选型
 
-- 数据库：MySQL+redis
+- 数据库：MySQL~~+redis~~
 
 - 后端技术选型：Maven+SpringBoot+mybatis+springMVC
 
@@ -33,6 +33,8 @@
 > JDK version 17
 >
 > MySQL version 8.x
+>
+> 考虑到服务器应该没多少人访问，且只有一台服务器，服务器内存又比较小，所以不打算使用redis了
 
 ## 开发周期
 
